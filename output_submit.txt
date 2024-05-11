@@ -1,0 +1,271 @@
+Testing add
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1065 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 67 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+RAN CYCLES       291
+  [0;32mPASS[0m
+Testing and
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1065 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 67 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+RAN CYCLES       291
+  [0;32mPASS[0m
+Testing or
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1065 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 67 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+RAN CYCLES       291
+  [0;32mPASS[0m
+Testing sub
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1065 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 67 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+RAN CYCLES       291
+  [0;32mPASS[0m
+Testing xor
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1065 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 67 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+RAN CYCLES       291
+  [0;32mPASS[0m
+Testing hello
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1087 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 68 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+Hello, world!
+RAN CYCLES      1007
+  [0;32mPASS[0m
+Testing mul
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1122 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 71 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+OkRAN CYCLES       974
+  [0;32mPASS[0m
+Testing reverse
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1110 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 70 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+                                                                                                                                                                                                                                                                
+RAN CYCLES     23933
+  [0;32mPASS[0m
+Testing thelie
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1442 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 91 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+                   .MMM.
+                     .OMM                       MM?
+                      ~MMM                              .  ..
+                    =MM~MM8                    . :ZMMMMMMMMM:
+                   MM8  +MM.       . :OMMMMMMMD+....NMMD.  :MM
+                .MM8.    MMO .MMM8,.  .     .. NMMD..  MMMMMMM
+         .MMN  'MO       .MM.  ..MMM. .   OMMM . .?MMMMMMMMMMM
+    MMD=.  :M.  8.       .,ZM .MMM. .$MMM.... MMMMMMMMMMMMMMMM
+    MMMI.. ...  MM.. ....   .$ ..MMMO. ...MMMMMMMMMMMMMMMM7
+    MD .MMM8.. ...MMMM...   NMMO .   8MMMMMMMMMMMMMMMM .    IM
+    MD     ...ZMMMMMMMMMMMD.. ..~MMMMMMMMMMMMMMMM?.   ..MMMMMM
+    MD                    ..MMMMMMMMMMMMMMMMN .  . OMMMMMMMMMM
+    MD                   .MMMMMMMMMMMMMM8  .  .NMMMMMMMMMMMMMM
+    MD                   .MMMMMMMMMM. .   +MMMMMMMMMMMMMMMM~..
+    MD                   .MMMMMI.  .. MMMMMMMMMMMMMMMM8 ...,MM
+    MD                   .M.. .  ?MMMMMMMMMMMMMMMM.....DMMMMMM
+    MD                       $MMMMMMMMMMMMMMMM.. . MMMMMMMMMMM
+    MD                   .MMMMMMMMMMMMMMMI. ..7MMMMMMMMMMMMMMM
+    MD                   .MMMMMMMMMMM   . MMMMMMMMMMMMMMMM
+    MD                   .MMMMMM~ .  $MMMMMMMMMMMMMMMM
+    MD                   .MM,. ..8MMMMMMMMMMMMMMMM
+    MD                    ..:MMMMMMMMMMMMMMMM?
+    MM                   .MMMMMMMMMMMMMMN
+     MM                  .MMMMMMMMMM
+      .MMM=..            .MMMMMM
+          '77MMMMMMMMMMMMMM7
+ RAN CYCLES     65551
+  [0;32mPASS[0m
+Testing thuemorse
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1126 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 2051 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 71 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 129 to 67108863.
+01101001100101101001011001101001100101100110100101101001100101101001011001101001011010011001011001101001100101101001011001101001
+RAN CYCLES     26503
+  [0;32mPASS[0m
+Testing matmul
+macOS
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 1685 to 2047.
+Warning: file 'mem.vmh' for memory 'bram_memory' has a gap at addresses 3075 to 1073741823.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Error: value processing error at line 2 of file 'zero512.vmh'
+       Malformed value.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 106 to 127.
+Warning: file 'memlines.vmh' for memory 'mainMem_bram_memory' has a gap at addresses 193 to 67108863.
+RAN CYCLES   2177707
+  [0;32mPASS[0m

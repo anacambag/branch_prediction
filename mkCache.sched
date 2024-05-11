@@ -1,0 +1,230 @@
+=== Generated schedule for mkCache ===
+
+Method schedule
+---------------
+Method: putFromProc
+Ready signal: (state == 2'd0) &&
+	      (bstate_serverAdapter_cnt .< 3'd3) &&
+	      (bdata_serverAdapter_cnt .< 3'd3) &&
+	      (btag_serverAdapter_cnt .< 3'd3) && curReq.i_notFull
+Conflict-free: getToProc, getToMem, putFromMem
+Conflicts: putFromProc
+ 
+Method: getToProc
+Ready signal: hitq.i_notEmpty
+Conflict-free: putFromProc, getToMem, putFromMem
+Conflicts: getToProc
+ 
+Method: getToMem
+Ready signal: memReq.i_notEmpty
+Conflict-free: putFromProc, getToProc, putFromMem
+Conflicts: getToMem
+ 
+Method: putFromMem
+Ready signal: memResp.i_notFull
+Conflict-free: putFromProc, getToProc, getToMem
+Conflicts: putFromMem
+ 
+Rule schedule
+-------------
+Rule: bstate_serverAdapter_outData_enqueue
+Predicate: bstate_serverAdapter_outData_enqw.whas &&
+	   ((! bstate_serverAdapter_outData_dequeueing.whas) ||
+	    bstate_serverAdapter_outData_ff.i_notEmpty)
+Blocking rules: (none)
+ 
+Rule: bstate_serverAdapter_outData_dequeue
+Predicate: bstate_serverAdapter_outData_dequeueing.whas &&
+	   bstate_serverAdapter_outData_ff.i_notEmpty
+Blocking rules: (none)
+ 
+Rule: bstate_serverAdapter_cnt_finalAdd
+Predicate: bstate_serverAdapter_cnt_1.whas ||
+	   bstate_serverAdapter_cnt_2.whas ||
+	   bstate_serverAdapter_cnt_3.whas
+Blocking rules: (none)
+ 
+Rule: bstate_serverAdapter_s1__dreg_update
+Predicate: True
+Blocking rules: (none)
+ 
+Rule: bstate_serverAdapter_stageReadResponseAlways
+Predicate: bstate_serverAdapter_writeWithResp.whas
+Blocking rules: (none)
+ 
+Rule: bstate_serverAdapter_moveToOutFIFO
+Predicate: ((! bstate_serverAdapter_s1[0]) ||
+	    bstate_serverAdapter_outData_ff.i_notFull) &&
+	   bstate_serverAdapter_s1[1]
+Blocking rules: (none)
+ 
+Rule: bstate_serverAdapter_overRun
+Predicate: bstate_serverAdapter_s1[1] &&
+	   ((! bstate_serverAdapter_outData_beforeEnq.read) ||
+	    (! bstate_serverAdapter_outData_beforeDeq.read) ||
+	    (! bstate_serverAdapter_outData_ff.i_notFull))
+Blocking rules: (none)
+ 
+Rule: btag_serverAdapter_outData_enqueue
+Predicate: btag_serverAdapter_outData_enqw.whas &&
+	   ((! btag_serverAdapter_outData_dequeueing.whas) ||
+	    btag_serverAdapter_outData_ff.i_notEmpty)
+Blocking rules: (none)
+ 
+Rule: btag_serverAdapter_outData_dequeue
+Predicate: btag_serverAdapter_outData_dequeueing.whas &&
+	   btag_serverAdapter_outData_ff.i_notEmpty
+Blocking rules: (none)
+ 
+Rule: btag_serverAdapter_cnt_finalAdd
+Predicate: btag_serverAdapter_cnt_1.whas || btag_serverAdapter_cnt_2.whas ||
+	   btag_serverAdapter_cnt_3.whas
+Blocking rules: (none)
+ 
+Rule: btag_serverAdapter_s1__dreg_update
+Predicate: True
+Blocking rules: (none)
+ 
+Rule: btag_serverAdapter_stageReadResponseAlways
+Predicate: btag_serverAdapter_writeWithResp.whas
+Blocking rules: (none)
+ 
+Rule: btag_serverAdapter_moveToOutFIFO
+Predicate: ((! btag_serverAdapter_s1[0]) ||
+	    btag_serverAdapter_outData_ff.i_notFull) &&
+	   btag_serverAdapter_s1[1]
+Blocking rules: (none)
+ 
+Rule: btag_serverAdapter_overRun
+Predicate: btag_serverAdapter_s1[1] &&
+	   ((! btag_serverAdapter_outData_beforeEnq.read) ||
+	    (! btag_serverAdapter_outData_beforeDeq.read) ||
+	    (! btag_serverAdapter_outData_ff.i_notFull))
+Blocking rules: (none)
+ 
+Rule: bdata_serverAdapter_outData_enqueue
+Predicate: bdata_serverAdapter_outData_enqw.whas &&
+	   ((! bdata_serverAdapter_outData_dequeueing.whas) ||
+	    bdata_serverAdapter_outData_ff.i_notEmpty)
+Blocking rules: (none)
+ 
+Rule: bdata_serverAdapter_outData_dequeue
+Predicate: bdata_serverAdapter_outData_dequeueing.whas &&
+	   bdata_serverAdapter_outData_ff.i_notEmpty
+Blocking rules: (none)
+ 
+Rule: bdata_serverAdapter_cnt_finalAdd
+Predicate: bdata_serverAdapter_cnt_1.whas || bdata_serverAdapter_cnt_2.whas ||
+	   bdata_serverAdapter_cnt_3.whas
+Blocking rules: (none)
+ 
+Rule: bdata_serverAdapter_s1__dreg_update
+Predicate: True
+Blocking rules: (none)
+ 
+Rule: bdata_serverAdapter_stageReadResponseAlways
+Predicate: bdata_serverAdapter_writeWithResp.whas
+Blocking rules: (none)
+ 
+Rule: bdata_serverAdapter_moveToOutFIFO
+Predicate: ((! bdata_serverAdapter_s1[0]) ||
+	    bdata_serverAdapter_outData_ff.i_notFull) &&
+	   bdata_serverAdapter_s1[1]
+Blocking rules: (none)
+ 
+Rule: bdata_serverAdapter_overRun
+Predicate: bdata_serverAdapter_s1[1] &&
+	   ((! bdata_serverAdapter_outData_beforeEnq.read) ||
+	    (! bdata_serverAdapter_outData_beforeDeq.read) ||
+	    (! bdata_serverAdapter_outData_ff.i_notFull))
+Blocking rules: (none)
+ 
+Rule: checkHitMiss
+Predicate: bstate_serverAdapter_outData_beforeDeq.read &&
+	   (bstate_serverAdapter_outData_ff.i_notEmpty ||
+	    bstate_serverAdapter_outData_enqw.whas) &&
+	   (btag_serverAdapter_outData_ff.i_notEmpty ||
+	    btag_serverAdapter_outData_enqw.whas) &&
+	   (bdata_serverAdapter_outData_ff.i_notEmpty ||
+	    bdata_serverAdapter_outData_enqw.whas) &&
+	   curReq.i_notEmpty &&
+	   (((bstate_serverAdapter_outData_ff.i_notEmpty
+	      ? bstate_serverAdapter_outData_ff.first
+	      : (bstate_serverAdapter_outData_enqw.whas
+		 ? bstate_serverAdapter_outData_enqw.wget
+		 : (_ :: Bit 2))) ==
+	     2'd1) ||
+	    btag_serverAdapter_outData_beforeDeq.read) &&
+	   (((! ((bstate_serverAdapter_outData_ff.i_notEmpty
+		  ? bstate_serverAdapter_outData_ff.first
+		  : (bstate_serverAdapter_outData_enqw.whas
+		     ? bstate_serverAdapter_outData_enqw.wget
+		     : (_ :: Bit 2))) ==
+		 2'd1)) &&
+	     (curReq.first[537:520] ==
+	      (btag_serverAdapter_outData_ff.i_notEmpty
+	       ? btag_serverAdapter_outData_ff.first
+	       : (btag_serverAdapter_outData_enqw.whas
+		  ? btag_serverAdapter_outData_enqw.wget
+		  : (_ :: Bit 18)))))
+	    ? ((! curReq.first[538]) ||
+	       ((bstate_serverAdapter_cnt .< 3'd3) &&
+		(bdata_serverAdapter_cnt .< 3'd3))) &&
+	      (curReq.first[538] ||
+	       (bdata_serverAdapter_outData_beforeDeq.read && hitq.i_notFull))
+	    : (memReq.i_notFull &&
+	       ((! ((bstate_serverAdapter_outData_ff.i_notEmpty
+		     ? bstate_serverAdapter_outData_ff.first
+		     : (bstate_serverAdapter_outData_enqw.whas
+			? bstate_serverAdapter_outData_enqw.wget
+			: (_ :: Bit 2))) ==
+		    2'd0)) ||
+		(btag_serverAdapter_outData_beforeDeq.read &&
+		 bdata_serverAdapter_outData_beforeDeq.read)))) &&
+	   (state == 2'd1)
+Blocking rules: (none)
+ 
+Rule: sendMemoryRequest
+Predicate: curReq.i_notEmpty && memReq.i_notFull && (state == 2'd3)
+Blocking rules: (none)
+ 
+Rule: readMemoryRequest
+Predicate: curReq.i_notEmpty &&
+	   (bstate_serverAdapter_cnt .< 3'd3) &&
+	   (bdata_serverAdapter_cnt .< 3'd3) &&
+	   memResp.i_notEmpty &&
+	   (btag_serverAdapter_cnt .< 3'd3) &&
+	   (curReq.first[538] || hitq.i_notFull) &&
+	   (state == 2'd2)
+Blocking rules: (none)
+ 
+Logical execution order: putFromProc,
+			 getToProc,
+			 getToMem,
+			 putFromMem,
+			 sendMemoryRequest,
+			 readMemoryRequest,
+			 bstate_serverAdapter_overRun,
+			 bstate_serverAdapter_moveToOutFIFO,
+			 btag_serverAdapter_stageReadResponseAlways,
+			 btag_serverAdapter_overRun,
+			 btag_serverAdapter_moveToOutFIFO,
+			 btag_serverAdapter_s1__dreg_update,
+			 bdata_serverAdapter_overRun,
+			 bdata_serverAdapter_moveToOutFIFO,
+			 checkHitMiss,
+			 bstate_serverAdapter_stageReadResponseAlways,
+			 bstate_serverAdapter_outData_enqueue,
+			 bstate_serverAdapter_outData_dequeue,
+			 bstate_serverAdapter_cnt_finalAdd,
+			 bstate_serverAdapter_s1__dreg_update,
+			 btag_serverAdapter_outData_enqueue,
+			 btag_serverAdapter_outData_dequeue,
+			 btag_serverAdapter_cnt_finalAdd,
+			 bdata_serverAdapter_stageReadResponseAlways,
+			 bdata_serverAdapter_outData_enqueue,
+			 bdata_serverAdapter_outData_dequeue,
+			 bdata_serverAdapter_cnt_finalAdd,
+			 bdata_serverAdapter_s1__dreg_update
+
+=======================================
