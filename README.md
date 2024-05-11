@@ -1,2 +1,2 @@
-# branch_prediction
+# Branch Prediction
 Branch Prediction Implementation
